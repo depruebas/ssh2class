@@ -3,27 +3,25 @@ ibrary to execute commands on remote console or web servers through ssh
 
 The library receives an array with the connection data and commands to execute, an array like this
 
-$options = array(
+```
+   $options = array(
     'user' => array(
       'username' => 'root',
       'key_pub' => '/home/depruebas/.ssh/Alex.pub',
       'key_pri' => '/home/depruebas/.ssh/Alex',
     ),
-
     'server' => array(
       'ip' => '192.168.82.209',
       'port' => '22',
     ),
-
     'command' => array(
       'space' => 'df -h --total --exclude-type=tmpfs',
       'du'  => 'du -sh /root/',
     ),
   );
-  
-  
+```
   And returns the results same this:
-  
+ ```
   Array
 (
     [success] => 1
@@ -47,7 +45,7 @@ $options = array(
         )
 
 )
-
+```
 
 This library needs php-ssh2.
 
@@ -58,5 +56,5 @@ https://www.netveloper.com/error-call-to-undefined-function-ssh2_connect
 Regards
 Alex
 
-https://www.cambiatealinux.com/
+https://www.cambiatealinux.com
 
