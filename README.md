@@ -1,5 +1,5 @@
 # ssh2class
-ibrary to execute commands on remote console or web servers through ssh
+Library to execute commands on remote console or web servers through ssh
 
 The library receives an array with the connection data and commands to execute, an array like this
 
